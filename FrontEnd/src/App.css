@@ -1,0 +1,731 @@
+.main-header {
+  box-sizing: border-box;
+  height: 14vh;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  justify-content: space-between;
+  box-shadow: 0 0.2rem 2rem rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+}
+
+.main-header__sticky {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  box-sizing: border-box;
+  height: 14vh;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  justify-content: space-between;
+  box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.nav__logo img {
+  height: 6rem;
+}
+
+.nav__options {
+  display: flex;
+  width: 20vw;
+  justify-content: space-between;
+}
+
+.nav__options h2 {
+  color: black;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  transition: all 0.15s;
+}
+
+.nav__options h2:hover {
+  color: #d9198d;
+}
+
+.nav__utils {
+  display: flex;
+  width: 40vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__utils img {
+  height: 1.5rem;
+  transition: all 0.15s;
+}
+
+.nav__utils img:hover {
+  height: 1.7rem;
+}
+
+.nav__util--search {
+  width: 20rem;
+  height: 2rem;
+  border-radius: 10rem;
+}
+
+.mainBanner {
+  /* margin-top: 14vh; */
+  padding: 0 5rem;
+  height: 90vh;
+  width: 100vw;
+  box-sizing: border-box;
+  background-color: #c8d8ee;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainBanner img {
+  height: 90vh;
+}
+
+.mainBanner__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90vh;
+  width: 35vw;
+}
+
+.mainBanner__content h1 {
+  font-size: 7rem;
+  margin: -1rem;
+}
+
+.mainBanner__content h4 {
+  font-size: 1.4rem;
+}
+
+.mainBanner__content--button {
+  width: 9rem;
+  height: 3rem;
+  border-radius: 3rem;
+  background-color: #3f3fd0;
+  color: white;
+  border: none;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.mainBanner__content--button:focus {
+  outline: none;
+}
+
+.mainBanner__content--button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
+  background-color: #2f2fe2;
+}
+
+.secBanner__heading {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.secBanner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.secItem {
+  position: relative;
+  height: 15rem;
+  width: 20rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+}
+
+.secItem h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  color: white;
+}
+
+.ProductCard {
+  height: 25rem;
+  width: 15rem;
+  background-color: #ededed;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.ProductCard:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+.ProductCard img {
+  height: 20rem;
+  width: 15rem;
+  margin-left: -0.01rem;
+  border-radius: 0.5rem;
+}
+
+.ProductCard__text {
+  margin-top: 0.3rem;
+  font-size: 1rem;
+  padding-left: 0.7rem;
+}
+
+.ProductCard__subtext {
+  margin-top: -0.8rem;
+  font-weight: 500;
+  color: grey;
+  font-size: 0.8rem;
+  padding-left: 0.7rem;
+}
+
+.ProductCard__price {
+  margin-top: -0.7rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding-left: 0.7rem;
+}
+
+.lastestProducts__heading {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.latestProducts {
+  padding: 0 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.mainFooter {
+  box-sizing: border-box;
+  padding: 5rem 5rem;
+  height: 85vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-top: 8rem;
+}
+
+.mainFooter h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.mainFooter__item--1 img {
+  height: 8rem;
+}
+
+.mainFooter__item--1 p {
+  font-size: 1rem;
+  padding: 3rem;
+  margin-top: -4.5rem;
+}
+
+.mainFooter__item--2 h3 {
+  font-size: 1rem;
+  font-weight: 300;
+  transition: all 0.2s;
+}
+
+.mainFooter__item--3 h3 {
+  font-size: 1rem;
+  font-weight: 300;
+  transition: all 0.2s;
+}
+.mainFooter__item--4 h3 {
+  font-size: 1rem;
+  font-weight: 300;
+  transition: all 0.2s;
+}
+
+.mainFooter__item--2 h3:hover {
+  transform: translateX(0.3rem);
+  color: #4335f3;
+  cursor: pointer;
+}
+
+.mainFooter__item--3 h3:hover {
+  transform: translateX(0.3rem);
+  color: #4335f3;
+  cursor: pointer;
+}
+
+.mainFooter__item--4 h3:hover {
+  transform: translateX(0.3rem);
+  color: #4335f3;
+  cursor: pointer;
+}
+
+.footerCopyright {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-left: 3rem;
+  width: 100%;
+}
+
+.Men {
+  position: relative;
+  margin-top: 2rem;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding-right: 2rem;
+}
+
+.Filter {
+  height: 100%;
+  width: 20vw;
+  border-right: 0.1px solid rgba(0, 0, 0, 0.2);
+}
+
+.ProductsList {
+  height: 100%;
+  width: 75vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.Filter {
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+}
+
+.Filter__options--jeans {
+  display: flex;
+  align-items: center;
+}
+
+.Filter__options--tshirt {
+  display: flex;
+  align-items: center;
+}
+
+.Filter__options--trousers {
+  display: flex;
+  align-items: center;
+}
+
+.Filter__options--jeans h4 {
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding-right: 0.3rem;
+}
+.Filter__options--tshirt h4 {
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding-right: 0.3rem;
+}
+
+.Filter__options--trousers h4 {
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding-right: 0.3rem;
+}
+
+.Filter__options--price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Filter__options--price input {
+  width: 12rem;
+}
+
+.Filter__options--price h4 {
+  font-weight: 500;
+  margin-top: -0.3rem;
+  text-align: center;
+}
+
+.ProductDetail {
+  position: relative;
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: -5rem;
+}
+
+.ProductDetail__content {
+  letter-spacing: 0.1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.ProductDetail__content--subheading {
+  font-size: 1.2rem;
+  margin-top: -0.6rem;
+}
+
+.ProductDetail__content--size {
+  margin: 0.5rem 0;
+  padding: 0.4rem;
+  border: 1px solid grey;
+  width: 2rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.ProductDetail__content--occasion {
+  padding: 0.5rem 0;
+}
+
+.ProductDetail__content--price {
+  font-weight: 500;
+  font-size: 2rem;
+  padding: 0.9rem 0;
+}
+
+.ProductDetail__content--description {
+  margin-top: -0.1rem;
+  width: 30rem;
+}
+
+.ProductDetail__content--button {
+  margin-top: 0.5rem;
+  margin-left: -0.5rem;
+  letter-spacing: 0.1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  height: 3rem;
+  width: 10rem;
+  border-radius: 3rem;
+  outline: none;
+  border: none;
+  background-color: #e64393;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ProductDetail__content--button:hover {
+  background-color: #de217e;
+  transform: scale(1.05);
+  box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.Cart {
+  position: relative;
+  height: 100%;
+  margin-bottom: 20rem;
+}
+
+.Cart h1{
+  padding: 1rem 0;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.Cart__checkout{
+  margin-top: 6rem;
+  position: absolute;
+  right: 5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+.Cart__checkout h4{
+  margin-top: -0.4rem;
+}
+
+.CartItem {
+  letter-spacing: 0.1rem;
+  box-sizing: border-box;
+  padding: 0.8rem 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F9F9F9;
+}
+
+.CartItem img {
+  height: 15rem;
+}
+
+.CartItem h5{
+  font-size: 1.2rem;
+}
+
+
+.CartItem h4{
+  width: 20rem;
+}
+
+.Order-btn{
+  margin-top: 0.5rem;
+  letter-spacing: 0.1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  height: 3rem;
+  width: 10rem;
+  border-radius: 3rem;
+  outline: none;
+  border: none;
+  background-color: #e64393;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.Order-btn:hover{
+  background-color: #de217e;
+  transform: scale(1.05);
+  box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.EmptyCart{
+  display: flex;
+  flex-direction: column;
+}
+
+.EmptyCart h1{
+  font-size: 1.2rem;
+  letter-spacing: 0.3rem;
+}
+
+.EmptyCart img{
+  padding: 1rem 0;
+  height: 12rem;
+}
+
+.CatLoading{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(10%,-20%);
+}
+
+.CatLoading img{
+  height:10rem;
+}
+
+.LatLoading{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+}
+
+.LatLoading img{
+  height:10rem;
+}
+
+.DetLoading{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.DetLoading img{
+  height: 10rem;
+}
+
+.ModalOpen{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 200vh;
+  background-color:rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  transition: all .2s;
+}
+
+.ModalOpen__container{
+  margin-top: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  width:20rem;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.MainLogin{
+  box-sizing: border-box;
+  padding:3rem 9rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  height: 100vh;
+  width: 100vw;
+}
+
+.MainLogin__signup{
+  box-sizing: border-box;
+  background-color: #e64393;
+  height: 80vh;
+  width: 40vw;
+  padding: 1rem 3rem;
+  border-radius: 10px;
+}
+
+.MainLogin__signup h1{
+  color:white;
+  font-size: 1.8rem;
+  margin-top: -1rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  margin-top: 2rem;
+}
+
+.MainLogin__signup--input{
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.MainLogin__signup--input-1 {
+  padding:0 0.4rem;
+  width: 20rem;
+  margin: 0.3rem ;
+  height: 2rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-bottom: 1px solid #e64393;
+  outline: none;
+}
+
+.MainLogin__signup--input button{
+  margin-top: 2rem;
+  height: 3rem;
+  width: 20rem;
+  border: 1px solid white ;
+  color:white;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  background-color: #e64393;
+  border-radius: 0.2rem;
+  transition: all .2s;
+  cursor: pointer;
+}
+
+.MainLogin__signup--input button:hover{
+  color: #e64393;
+  background-color: white;
+}
+
+.MainLogin__signup--input button:focus{
+  outline: none;
+
+}
+
+.MainLogin__signup label input{
+  color: white;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.MainLogin__signup label{
+  color: white;
+}
+
+.MainLogin__login{
+  background-color: white;
+  height: 80vh;
+  width: 40vw;
+  margin-top: 5rem;
+}
+
+.MainLogin__login h1{
+  font-size: 1.8rem;
+  margin-top: -1rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+}
+
+.MainLogin__login--input{
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.MainLogin__login--input-1 {
+  width: 20rem;
+  margin: 0.3rem ;
+  height: 2rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-bottom: 1px solid #e64393;
+  outline: none;
+}
+
+.MainLogin__login--input button{
+  margin-top: 2rem;
+  height: 3rem;
+  width: 20rem;
+  border: 1px solid #e64393 ;
+  color:#e64393;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  background-color: white;
+  border-radius: 0.2rem;
+  transition: all .2s;
+  cursor: pointer;
+}
+
+.MainLogin__login--input button:hover{
+  color: white;
+  background-color: #e64393;
+}
+
+.MainLogin__login--input button:focus{
+  outline: none;
+
+}
+
+.MainLogin__login label input{
+  color: grey;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.LogIcon{
+  box-sizing: border-box;
+  padding: 0.7rem;
+  border-radius: 5px;
+  color: white;
+  letter-spacing: 0.1rem;
+  background-color: #e64393;
+  transition: all .2s;
+}
+
+.LogIcon:hover{
+  background-color:purple;
+}
+
+.LogOutIcon{
+  box-sizing: border-box;
+  padding: 0.7rem;
+  border-radius: 5px;
+  color: white;
+  letter-spacing: 0.1rem;
+  background-color: #e64393;
+  outline: none;
+  border: none;
+  transition: all .2s;
+}
